@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="256.0" prefWidth="941.0" styleClass="background" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kfu.deanery.AddEditDisciplineController">
+   <children>
+      <HBox layoutX="34.0" layoutY="85.0" spacing="20.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="ID" />
+                  <TextField fx:id="idField" prefHeight="36.0" prefWidth="90.0" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Название предмета" />
+                  <TextField fx:id="nameField" prefHeight="36.0" prefWidth="314.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="66.0" prefWidth="254.0">
+               <children>
+                  <Label text="ФИО преподавателя" />
+                  <TextField fx:id="FIOField" prefHeight="36.0" prefWidth="104.0" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Кол-во часов" />
+                  <TextField fx:id="hourField" prefHeight="36.0" prefWidth="70.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button layoutX="34.0" layoutY="182.0" mnemonicParsing="false" onAction="#Cancel" text="Отмена" AnchorPane.leftAnchor="32.0" />
+      <Button layoutX="788.0" layoutY="182.0" mnemonicParsing="false" onAction="#Ok" text="Сохранить" AnchorPane.rightAnchor="32.0" />
+   </children>
+</AnchorPane>

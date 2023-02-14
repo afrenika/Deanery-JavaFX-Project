@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="H1" prefHeight="400.0" prefWidth="550.0" styleClass="background" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kfu.deanery.ShopController">
+   <children>
+      <HBox layoutX="177.0" layoutY="254.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonCheck" text="Войти" />
+            <Button mnemonicParsing="false" onAction="#otmenaCheck" text="Отмена" />
+         </children>
+      </HBox>
+      <Label layoutX="115.0" layoutY="134.0" stylesheets="@stylesheet.css" text="Логин">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="173.0" text="Пароль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField1" layoutX="239.0" layoutY="135.0" />
+      <Label layoutX="231.0" layoutY="53.0" styleClass="h" stylesheets="@stylesheet.css" text="Вход">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="textField2" layoutX="239.0" layoutY="178.0" />
+   </children>
+</AnchorPane>
